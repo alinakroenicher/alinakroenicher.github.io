@@ -74,9 +74,9 @@
             <img src="bilder/t4s.jpg" width="100" height="100">
            
             <div class="Buttons">
-                <button>Startseite</button>
+                <button onclick="showStartseite()">Startseite</button>
 
-                <button>Speisekarte</button>
+                <button onclick="showSpeisekarte()">Speisekarte</button>
         
                 <button>Kundenmeinungen</button>
              </div>
@@ -159,6 +159,17 @@
         var Nachricht1 = "Danke, dass Sie alle Cookies und Kuchen akzeptiert haben!" 
             alert(Nachricht1)
     </script>
+    <script> 
+    function showStartseite  () {
+        
+    }
+    function showSpeisekarte() {
+        var StartseitSection =document.querySelector(".Startseite")
+        StartseitSection.style.display= "none";
+    }   
+
+     </script>
+
     </body>
 </html>
 
