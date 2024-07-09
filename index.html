@@ -160,17 +160,29 @@
             alert(Nachricht1)
     </script>
     <script> 
-    function showStartseite  () {
-        
+    function showStartseite() {
+        var StartseiteSection = document.querySelector(".Startseite")
+        StartseiteSection.style.display= "flex";
+        var SpeisekarteSection = document.querySelector(".Speisekarte");
+        varSpeisekarteSection.style.display="none";
+        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
+        KundenmeinungenSection.style.display="none";
     }
     function showSpeisekarte() {
-        var StartseitSection =document.querySelector(".Startseite")
-        StartseitSection.style.display= "none";
-        var SpeisekarteSection =document.querySelector(".Speisekarte");
+        var StartseiteSection = document.querySelector(".Startseite")
+        StartseiteSection.style.display= "none";
+        var SpeisekarteSection = document.querySelector(".Speisekarte");
         varSpeisekarteSection.style.display="flex";
-        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen ");
+        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
         KundenmeinungenSection.style.display="none";
-    }   
+    } 
+    function showKundenmeinungen() {
+        var StartseiteSection = document.querySelector(".Startseite")
+        StartseiteSection.style.display= "none";
+        var SpeisekarteSection = document.querySelector(".Speisekarte");
+        varSpeisekarteSection.style.display="none";
+        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
+        KundenmeinungenSection.style.display="flex"
 
      </script>
 
