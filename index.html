@@ -74,17 +74,17 @@
             <img src="bilder/t4s.jpg" width="100" height="100">
            
             <div class="Buttons">
-                <button onclick="showStartseite()">Startseite</button>
+                <button onclick="showHome()">Startseite</button>
 
-                <button onclick="showSpeisekarte()">Speisekarte</button>
+                <button onclick="showPage1()">Speisekarte</button>
         
-                <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
+                <button onclick="showPage2()">Kundenmeinungen</button>
              </div>
         </div class="navi">
 
         <div class="content">
 
-            <Section class="Startseite">
+            <Section class="Home">
 
                 <div class="left">
       
@@ -101,7 +101,7 @@
 
             </Section>
          
-            <Section class="Speisekarte">
+            <Section class="Page1">
 
             Hauptgang:
 
@@ -131,7 +131,7 @@
             
             </Section>
             
-            <Section class="Kundenmeinungen">
+            <Section class="Page2">
                 Lias (24)
                 Noch nie so etwas schlechtes gegessen !!!!
                 Absulute Fechheit , so etwas hat die Welt noch nie gesehen.
@@ -151,36 +151,36 @@
 </div class="content">
 
     <script>
-        var Nachricht1 = "Danke, dass Sie alle Cookies und Kuchen akzeptiert haben!" 
+        var Nachricht1 = "Danke, dass Sie alle Cookies akzeptiert haben!" 
             alert(Nachricht1)
     </script>
 
     <script> 
-    function showStartseite() {
-        var StartseiteSection = document.querySelector(".Startseite")
-        StartseiteSection.style.display= "flex";
-        var SpeisekarteSection = document.querySelector(".Speisekarte");
-        varSpeisekarteSection.style.display="none";
-        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
-        KundenmeinungenSection.style.display="none";
+    function showHome() {
+        var HomeSection = document.querySelector(".Home")
+        HomeSection.style.display= "flex";
+        var Page1Section = document.querySelector(".Page1");
+        Page1Section.style.display="none";
+        var Page2Section = document.querySelector(".Page2");
+        Page2Section.style.display="none";
     }
 
-    function showSpeisekarte() {
-        var StartseiteSection = document.querySelector(".Startseite")
-        StartseiteSection.style.display= "none";
-        var SpeisekarteSection = document.querySelector(".Speisekarte");
-        varSpeisekarteSection.style.display="flex";
-        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
-        KundenmeinungenSection.style.display="none";
+    function showPage1() {
+        var HomeSection = document.querySelector(".Home")
+        HomeSection.style.display= "none";
+        var Page1Section = document.querySelector(".Page1");
+        Page1Section.style.display="flex";
+        var Page2Section = document.querySelector(".Page2");
+        Page2Section.style.display="none";
     } 
 
-    function showKundenmeinungen() {
-        var StartseiteSection = document.querySelector(".Startseite")
-        StartseiteSection.style.display= "none";
-        var SpeisekarteSection = document.querySelector(".Speisekarte");
-        varSpeisekarteSection.style.display="none";
-        var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
-        KundenmeinungenSection.style.display="flex";
+    function showPage2() {
+        var HomeSection = document.querySelector(".Home")
+        HomeSection.style.display= "none";
+        var Page1Section = document.querySelector(".Page1");
+        Page1Section.style.display="none";
+        var Page2Section = document.querySelector(".Page2");
+        Page2Section.style.display="flex";
     } 
      </script>
 
