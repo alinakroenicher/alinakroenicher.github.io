@@ -12,10 +12,10 @@
             display: flex;
         }
         .Speisekarte {
-            display: none;
+            display: flex;
         }
         .Kundenmeinungen {
-            display: none;
+            display: flex;
         }
 
 
@@ -159,6 +159,7 @@
         var Nachricht1 = "Danke, dass Sie alle Cookies und Kuchen akzeptiert haben!" 
             alert(Nachricht1)
     </script>
+
     <script> 
     function showStartseite() {
         var StartseiteSection = document.querySelector(".Startseite")
@@ -168,6 +169,7 @@
         var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
         KundenmeinungenSection.style.display="none";
     }
+
     function showSpeisekarte() {
         var StartseiteSection = document.querySelector(".Startseite")
         StartseiteSection.style.display= "none";
@@ -176,6 +178,7 @@
         var KundenmeinungenSection = document.querySelector(".Kundenmeinungen");
         KundenmeinungenSection.style.display="none";
     } 
+
     function showKundenmeinungen() {
         var StartseiteSection = document.querySelector(".Startseite")
         StartseiteSection.style.display= "none";
